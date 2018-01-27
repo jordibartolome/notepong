@@ -1,0 +1,168 @@
+.notepong .board {
+  width: 300px;
+  background-color: white;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+  margin-right: 40px;
+  display: inline-block;
+  vertical-align: top;
+}
+.notepong .board .title {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #f64e20;
+  display: block;
+}
+.notepong .board .player {
+  margin-bottom: 10px;
+}
+.notepong .board .player .playerAvatar {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.notepong .board .player .name {
+  position: relative;
+  top: 10px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+}
+.notepong .board .player .points {
+  float: right;
+  top: 10px;
+  position: relative;
+  right: 40px;
+}
+.notepong .board .player.leader .playerAvatar {
+  width: 50px;
+  height: 50px;
+}
+.notepong .board .player.leader .name {
+  font-size: 17px;
+  font-weight: bold;
+  top: 12px;
+}
+.notepong .board .player.leader .points {
+  font-size: 17px;
+  font-weight: bold;
+  top: 12px;
+}
+.notepong .lastGames .game {
+  display: block;
+}
+.notepong .lastGames .score {
+  font-weight: bold;
+}
+.notepong .tournaments .tournament {
+  display: block;
+  cursor: pointer;
+  padding: 8px;
+  text-align: center;
+  background-color: #fafaf5;
+  margin-bottom: 5px;
+}
+.addResult .playerTournament, .newTournament .playerTournament {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  transition-property: opacity;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  transition-duration: 0.15s;
+  -webkit-transition-duration: 0.15s;
+  -moz-transition-duration: 0.15s;
+}
+.addResult .playerTournament:hover, .newTournament .playerTournament:hover {
+  opacity: 0.6;
+}
+.addResult .playerTournament.highlighted, .newTournament .playerTournament.highlighted {
+  border: 3px solid #f98f06;
+}
+.addResult .selectedPlayer, .newTournament .selectedPlayer {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin-right: 60px;
+}
+.addResult .result, .newTournament .result {
+  width: 50px !important;
+  top: 30px;
+  position: relative;
+  vertical-align: top;
+}
+.tournamentWrapper {
+  display: block;
+  padding: 50px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.tournamentWrapper .roundContainer {
+  display: inline-block;
+  background-color: white;
+  margin-right: 20px;
+  padding: 20px;
+  border: 1px solid rgba(245, 98, 56, 0.11);
+  vertical-align: top;
+}
+.tournamentWrapper .roundContainer .roundNumber {
+  font-weight: bold;
+  font-size: 18px;
+  display: block;
+}
+.tournamentWrapper .roundContainer .gameWrapper {
+  display: block;
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  margin-top: 60px;
+  text-align: center;
+}
+.tournamentWrapper .roundContainer .gameWrapper .playerAvatar {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.tournamentWrapper .roundContainer .gameWrapper .playerAvatar.winner {
+  border: 1px solid #f55629;
+  z-index: 5000;
+}
+.tournamentWrapper .roundContainer .gameWrapper .result {
+  display: inline-block;
+  width: 60px;
+}
+.tournamentWrapper .roundContainer .gameWrapper .sendScore {
+  position: relative;
+  bottom: -10px;
+  display: block;
+  margin: 0 auto;
+}
+.tournamentWrapper .roundContainer .gameWrapper.finished .player1 {
+  left: 25px;
+}
+.tournamentWrapper .roundContainer .gameWrapper.finished .player2 {
+  left: -25px;
+}
+.tournamentWrapper .roundContainer .gameWrapper.finished .finalResult {
+  position: relative;
+  text-align: center;
+  display: block;
+  font-size: 20px;
+}
+.playerBackgroundAvatar {
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 5000px;
+  position: relative;
+  z-index: 1000;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

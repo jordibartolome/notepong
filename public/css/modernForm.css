@@ -1,0 +1,679 @@
+/* MODERN FORM IN A PAGE */
+.modernForm {
+  /* BUTTONS */
+  /* Button wrapper used to display hints in disabled buttons */
+  /* end */
+}
+.modernForm input, .modernForm select {
+  outline: none;
+}
+.modernForm input.inputMediumWidth {
+  width: 100px !important;
+}
+.modernForm .lighterText {
+  color: #807f71;
+}
+.modernForm .draggable {
+  cursor: default;
+}
+.modernForm .section {
+  display: table-cell;
+  position: relative;
+  width: 450px;
+  vertical-align: top;
+  height: 100%;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 70px;
+}
+.modernForm .section .sectionTitle {
+  /* Large section title */
+  font-size: 20px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  display: block;
+}
+.modernForm .section .sectionTitle.largePadding {
+  padding-bottom: 25px;
+}
+.modernForm .section .title {
+  /* basic title for items */
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.modernForm .section .infoWrapper {
+  position: relative;
+  display: block;
+  padding: 20px;
+  background-color: white;
+  height: 100%;
+}
+.modernForm .section .infoWrapper.minHeight145 {
+  min-height: 145px;
+}
+.modernForm .section .subsection {
+  border-bottom: 1px solid #eef3f3;
+  padding-bottom: 17px;
+  margin-bottom: 15px;
+}
+.modernForm .section .subsection.lastSubsection {
+  border-bottom: 0px;
+  margin-bottom: 0px;
+}
+.modernForm .section.sectionFullWidth {
+  width: 100%;
+  display: block;
+}
+.modernForm .section.doubleWidth {
+  min-width: 950px;
+  display: block;
+}
+.modernForm .section.littleBottomPadding {
+  padding-bottom: 20px;
+}
+.modernForm .section.columnsContainer {
+  width: fit-content;
+}
+.modernForm .sectionInRow {
+  display: block;
+  margin-bottom: 10px;
+}
+.modernForm .sectionInRow.last {
+  margin-bottom: 0px;
+}
+.modernForm .twoSectionsInline {
+  display: block;
+}
+.modernForm .inputWithLabel {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  display: block;
+}
+.modernForm .inputWithLabel.rightMargin {
+  margin-right: 20px;
+}
+@media screen and (max-width: 1330px) {
+  .modernForm .userAvatarWrapper {
+    margin: 0 auto;
+    min-width: inherit;
+  }
+  .modernForm .section {
+    display: block;
+    padding-bottom: 40px;
+    min-width: inherit;
+    width: inherit;
+  }
+  .modernForm .section.doubleWidth {
+    width: inherit;
+    min-width: inherit;
+  }
+  .modernForm .section.doubleWidth .columnsContainer {
+    display: block;
+  }
+  .modernForm .section.doubleWidth .columnsContainer .firstColumn, .modernForm .section.doubleWidth .columnsContainer .secondColumn {
+    display: block;
+    flex-grow: 0;
+    width: 100%;
+  }
+  .modernForm .section.columnsContainer {
+    display: block !important;
+    width: inherit;
+  }
+  .modernForm .section.columnsContainer .firstColumn, .modernForm .section.columnsContainer .secondColumn {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .modernForm .section.columnsContainer .sectionInRow {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+.modernForm .noBorderBox {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 20px;
+}
+.modernForm .grayColor {
+  color: #818073;
+}
+.modernForm .bigTitle {
+  line-height: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  display: block;
+}
+.modernForm .description {
+  font-size: 15px;
+  display: block;
+  margin-bottom: 10px;
+}
+.modernForm .description.smaller {
+  font-size: 13px;
+  color: grey;
+}
+.modernForm .description.largeDescription {
+  font-size: 17px;
+}
+.modernForm .fingerprint {
+  font-size: 12px;
+  margin-top: 30px;
+}
+.modernForm .centered {
+  text-align: center;
+}
+.modernForm .highlighted {
+  color: #f94d06;
+}
+.modernForm .formRow {
+  margin-bottom: 10px;
+  line-height: 20px;
+}
+.modernForm .formRow.extraMargin {
+  margin-bottom: 30px;
+}
+.modernForm .formRow.withBorder {
+  border-bottom: 1px solid #d4d3bf;
+}
+.modernForm .formLabel {
+  font-weight: normal;
+}
+.modernForm .formLabelDetail {
+  margin-left: 10px;
+  font-size: 12px;
+}
+.modernForm .extraMargin {
+  margin-bottom: 30px !important;
+}
+.modernForm .smallExtraMargin {
+  margin-bottom: 10px;
+}
+.modernForm .inputDescription {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+.modernForm .inputDescription .formLabelHint {
+  margin-left: 20px;
+}
+.modernForm .inputDescription.oneLine {
+  display: block;
+}
+.modernForm .inputDescription.noBold {
+  font-weight: normal;
+}
+.modernForm .columnsContainer {
+  display: flex;
+  width: 100%;
+}
+.modernForm .columnsContainer .sectionInRow {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+.modernForm .columnsContainer .section.mostLeft, .modernForm .columnsContainer .sectionInRow.mostLeft {
+  padding-left: 0px;
+}
+.modernForm .columnsContainer .section.mostRight, .modernForm .columnsContainer .sectionInRow.mostRight {
+  padding-right: 0px;
+}
+.modernForm .columnsContainer .column {
+  width: inherit;
+  margin-right: 5px;
+}
+.modernForm .columnsContainer .column.lastColumn {
+  margin-right: 0px !important;
+}
+.modernForm .firstColumn {
+  flex-direction: row;
+  flex-grow: 1;
+  flex-basis: 0;
+  margin-right: 10px;
+}
+.modernForm .secondColumn {
+  flex-direction: row;
+  flex-grow: 1;
+  flex-basis: 0;
+  position: relative;
+}
+.modernForm .column {
+  flex-direction: row;
+  flex-grow: 1;
+  flex-basis: 0;
+  position: relative;
+}
+.modernForm .fixedWidthColumn {
+  flex-grow: unset;
+}
+.modernForm .firstColumn.fixedWidth, .modernForm .halfWidth {
+  width: 49%;
+}
+.modernForm .grow02 {
+  flex-grow: 0.2 !important;
+}
+.modernForm input[type="number"], .modernForm input[type="text"], .modernForm input[type="password"] {
+  font-size: 20px;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  margin: 0;
+  box-sizing: border-box;
+}
+.modernForm input[type="number"].whiteBackground, .modernForm input[type="text"].whiteBackground, .modernForm input[type="password"].whiteBackground {
+  background-color: white;
+}
+.modernForm .embedParameter input {
+  width: 90%;
+  border: 1px #ccccd0 solid;
+}
+.modernForm textarea {
+  font-size: 20px;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  margin: 0;
+  box-sizing: border-box;
+  border-color: #ccc;
+  min-height: 80px;
+}
+.modernForm input[type="number"].mediumInput, .modernForm input[type="text"].mediumInput {
+  width: 200px;
+}
+.modernForm input[type="number"].shortInput, .modernForm input[type="text"].shortInput {
+  width: 70px;
+}
+.modernForm input[type="number"].cvvInput {
+  -moz-appearance: textfield;
+}
+.modernForm input[type="number"].cvvInput::-webkit-inner-spin-button, .modernForm input[type="number"].cvvInput::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin: 0;
+}
+.modernForm .inputBorderCreditCard {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+.modernForm .select {
+  width: 100%;
+  position: relative;
+}
+.modernForm .select:before {
+  content: '\25bc';
+  position: absolute;
+  pointer-events: none;
+  color: #757575;
+  top: 0;
+  bottom: 1px;
+  padding-top: 0.7em;
+  line-height: 1;
+  right: 0;
+  width: 2em;
+  text-align: center;
+  transform: scale(0.84, 0.42);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.84, M12=0, M21=0, M22=0.42, SizingMethod='auto expand')";
+  filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.84, M12=0, M21=0, M22=0.42, SizingMethod='auto expand');
+}
+.modernForm .select select {
+  height: 46px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 2em;
+  padding-left: 8px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  background: white;
+  font-size: 16px;
+  font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 0;
+}
+.modernForm .buttonWithPadding.actionButton.medium {
+  padding: 10px 20px 10px 20px;
+}
+.modernForm .buttonWithPadding.actionButton.small {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.modernForm .buttonsWrapper {
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+.modernForm .buttonsWrapper.largeMarginTop {
+  margin-top: 50px;
+}
+.modernForm .buttonsWrapper.topRight {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.modernForm .buttonWrapper {
+  position: relative;
+}
+.modernForm .buttonOverlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1000;
+}
+.modernForm button, .modernForm .button {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 8px 25px;
+  text-align: center;
+  white-space: nowrap;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 2px;
+  border: 0px solid #808080;
+  transition-property: color, background-color;
+  transition-duration: 0.15s;
+  cursor: pointer;
+  position: relative;
+}
+.modernForm button i, .modernForm .button i {
+  position: absolute;
+  left: 10px;
+}
+.modernForm button.withPadding, .modernForm .button.withPadding {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.modernForm button.rightMargin, .modernForm .button.rightMargin {
+  margin-right: 5px;
+}
+.modernForm button.iconWhenHover i, .modernForm .button.iconWhenHover i {
+  opacity: 0;
+  visibility: hidden;
+  transition-property: visibility, opacity;
+  transition-duration: 1s;
+}
+.modernForm button.iconWhenHover:hover i, .modernForm .button.iconWhenHover:hover i {
+  opacity: 1;
+  visibility: visible;
+}
+.modernForm button:disabled, .modernForm .button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.modernForm button.rightMovementTransition, .modernForm .button.rightMovementTransition {
+  transform: translate(50px, 0);
+}
+.modernForm button.primary, .modernForm .button.primary {
+  color: #f8f8f8;
+  background-color: #f55629;
+  border-color: #c44521;
+  outline-style: none;
+}
+.modernForm button.primary:hover, .modernForm .button.primary:hover {
+  color: #fff;
+  background-color: #e34518;
+}
+.modernForm button.primary:disabled, .modernForm button.secondary:disabled, .modernForm .button.primary:disabled, .modernForm .button.secondary:disabled {
+  color: #f7f6ee;
+  background-color: #c5c3af;
+  border-color: #b0af9d;
+  cursor: default;
+}
+.modernForm button.mini, .modernForm .button.mini {
+  font-size: 11px;
+  font-weight: bold;
+  padding: 6px 9px;
+  min-width: 90px;
+  color: #f0f0f0;
+  background-color: #f55629;
+  border-color: #c44521;
+  color: #f0f0f0;
+  background-color: #f55629;
+  border-color: #c44521;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
+  border-radius: 4px;
+  border: 0px solid #808080;
+  transition-property: opacity, color, background-color;
+  transition-duration: 0.3s;
+  vertical-align: baseline;
+  cursor: pointer;
+}
+.modernForm button.darkColors, .modernForm .button.darkColors {
+  background-color: #929289;
+  color: #fff;
+}
+.modernForm button.freeColors, .modernForm .button.freeColors {
+  background-color: #bab9a6;
+  color: #fff;
+}
+.modernForm button.freeColors:hover, .modernForm .button.freeColors:hover {
+  background-color: #929289;
+}
+.modernForm button.premiumColors, .modernForm .button.premiumColors {
+  background-color: #f64e20;
+  color: #fff;
+}
+.modernForm button.premiumBorder, .modernForm .button.premiumBorder {
+  border: 1px solid #f64e20;
+}
+.modernForm button.premiumColors:hover, .modernForm .button.premiumColors:hover {
+  background-color: #dd461d;
+}
+.modernForm button.premiumColorsInverse, .modernForm .button.premiumColorsInverse {
+  background-color: #fff;
+  color: #f64e20;
+}
+.modernForm button.premiumColorsInverse:hover, .modernForm .button.premiumColorsInverse:hover {
+  background-color: #fafaf5;
+}
+.modernForm button.learnColors, .modernForm .button.learnColors {
+  background-color: #71c8b9;
+  color: #fff;
+}
+.modernForm button.learnColors:hover, .modernForm .button.learnColors:hover {
+  background-color: #65b4a6;
+}
+.modernForm button.learnColors .standardLink, .modernForm .button.learnColors .standardLink {
+  font-weight: bold;
+}
+.modernForm button.learnColorsInverse, .modernForm .button.learnColorsInverse {
+  background-color: #fff;
+  color: #71c8b9;
+}
+.modernForm button.learnColorsInverse:hover, .modernForm .button.learnColorsInverse:hover {
+  background-color: #fafaf5;
+}
+.modernForm button.white, .modernForm .button.white {
+  background-color: #fff;
+  color: #a6aaa9;
+  border: 1px solid #d3d3d3;
+  margin-top: -1px;
+  margin-bottom: -1px;
+}
+.modernForm button.white:hover, .modernForm .button.white:hover {
+  background-color: #fafaf5;
+}
+.modernForm button.crazyPurpleColors, .modernForm .button.crazyPurpleColors {
+  background-color: #6c78b5;
+  color: #fff;
+}
+.modernForm button.crazyPurpleColors:hover, .modernForm .button.crazyPurpleColors:hover {
+  background-color: #44539c;
+  color: #fff;
+}
+.modernForm button.beigeColors, .modernForm .button.beigeColors {
+  background-color: #cfcdb9;
+  color: #291404;
+}
+.modernForm button.beigeColors:hover, .modernForm .button.beigeColors:hover {
+  background-color: #945a0f;
+  color: black;
+}
+.modernForm button.brownColors, .modernForm .button.brownColors {
+  background-color: #bdbaa9;
+  color: black;
+}
+.modernForm button.brownColors:hover, .modernForm .button.brownColors:hover {
+  background-color: #929084;
+  color: black;
+}
+.modernForm button.grayColors, .modernForm .button.grayColors {
+  background-color: #7f7f7f;
+  color: white;
+}
+.modernForm button.grayColors:hover, .modernForm .button.grayColors:hover {
+  background-color: #707070;
+  color: white;
+}
+.modernForm .checkboxWithNoInputDescription {
+  position: relative;
+  top: 34px;
+}
+.modernForm .buttonWithIcon {
+  padding-left: 10px;
+}
+.modernForm .separator {
+  height: 1px;
+  width: 100%;
+  background-color: #ebeced;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.modernForm .wizardSteps {
+  display: block;
+  border-bottom: 1px solid #d4d3bf;
+  padding-bottom: 20px;
+  padding-bottom: 10px;
+}
+.modernForm .wizardSteps .step {
+  display: inline-block;
+  margin-right: 40px;
+}
+.modernForm .wizardSteps .step .circle {
+  border-radius: 1000px;
+  background-color: white;
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #dcddcd;
+  top: -5px;
+  position: relative;
+  margin-right: 5px;
+}
+.modernForm .wizardSteps .step .circle .stepNumber, .modernForm .wizardSteps .step .circle i {
+  color: #dcddcd;
+  top: 5px;
+  position: relative;
+}
+.modernForm .wizardSteps .step .stepLabel {
+  display: inline-block;
+  font-weight: bold;
+}
+.modernForm .wizardSteps .step.selected .circle {
+  background-color: #787768;
+  border: none;
+}
+.modernForm .wizardSteps .step.selected .stepNumber {
+  color: white;
+}
+.modernForm .wizardSteps .step.checked .circle {
+  background-color: #5ebfab;
+  border: none;
+}
+.modernForm .wizardSteps .step.checked i {
+  color: white;
+}
+.modernForm .wizardSteps .step.error .circle {
+  background-color: #f65d26;
+  border: none;
+}
+.modernForm .wizardSteps .step.error i {
+  color: white;
+}
+.modernForm.medium .select select {
+  height: 39px;
+  font-size: 13px;
+}
+.modernForm.medium input[type="number"], .modernForm.medium input[type="text"], .modernForm.medium input[type="password"], .modernForm.medium textarea {
+  font-size: 13px;
+}
+.modernForm.small .select select {
+  height: 30px;
+  font-size: 11px;
+}
+.modernForm.small input[type="number"], .modernForm.small input[type="text"], .modernForm.small input[type="password"], .modernForm.small textarea {
+  font-size: 13px;
+}
+/* MODERN FORM IN A DIALOG */
+.modernForm.dialog {
+  background-color: white;
+  border: 0px;
+  border-radius: 0px;
+}
+.modernForm.dialog .header {
+  background-color: #f94d06;
+  height: 34px;
+  padding-top: 10px;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+.modernForm.dialog .body {
+  padding: 20px;
+}
+.modernForm.dialog .body .scrollableDialog {
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 5px;
+  margin-right: -5px;
+  padding-bottom: 20px;
+}
+.modernForm.dialog .body .scrollingShadow {
+  height: 20px;
+  background: linear-gradient(rgba(238, 237, 221, .1), #d8d7c9);
+  margin-right: -20px;
+  margin-left: -20px;
+  border-bottom: 1px solid rgba(178, 176, 144, 1);
+  top: -20px;
+  position: relative;
+}
+.modernForm.dialog .body.largePadding {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.modernForm.dialog .body.beigeBackground {
+  background-color: #efeede;
+}
+.modernForm.dialog .close {
+  position: absolute;
+  right: 0px;
+  top: 1px;
+  cursor: pointer;
+}
+.modernForm.dialog .orangeTitle .close:hover {
+  background-color: #ce5523;
+}
+.modernForm.dialog .grayTitle .close:hover {
+  background-color: #65645a;
+}
+.modernForm.dialog .disclaimer {
+  margin-bottom: 0px;
+  margin-top: 20px;
+  font-size: 11px;
+}
+.modernForm.genericPage .largePadding {
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.modernForm.genericPage .smallPadding {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <!-- METATAGS -->
+      <!-- CUSTOM -->
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="google-site-verification" content="y0NjXVqQOvN1RmdSQ7DLwlEDpFrKkOs4DfxpoTGjgng" />
+      <title>Notepong</title>
+      <meta name="description" content="Fundació Miranda - Santuari de cavalls lliures. On els cavalls poden tornar a ser cavalls." />
+      <meta name="application-name" content="Fundació Miranda">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <!-- END -->
+    <!-- END -->
+
+    <!-- CSS -->
+      <!-- LIBS -->
+      <link rel="shortcut icon" type="image/png" href="/images/favicon.png?v=5"/>
+      <link rel="stylesheet" type="text/css" href="/css/reset.css">
+      <!-- END -->
+      
+      <!-- CUSTOM -->
+      <link rel="stylesheet" type="text/css" href="/css/modernForm.css">
+      <link rel="stylesheet" type="text/css" href="/css/base.css">
+      <!-- END -->
+    <!-- END -->
+  
+    <!-- SCRIPTS -->
+      <!-- LIBS  -->
+      <script src="https://use.fontawesome.com/e1961fd544.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+      <!-- <script type='text/javascript' src='/static/js/lib/jquery-3.1.1.min.js'></script> -->
+      <!-- END -->
+
+    <!-- END -->
+  </head>
+
+  <body>
+  	
+
+<div id="notepong" class="notepong scrollingPage modernForm">
+	<h1 class="center">Notepong</h1>
+
+		<div class="largePadding centered">
+			<div class="board">
+				<span class="title">Ranking</span>
+
+
+				<!-- <div class="player" v-for="todo in todos" data-bind="css: {leader: $index() == 0}"> -->
+				<div class="player" v-for="stat in stats">
+<!-- 					<div class="playerAvatar playerBackgroundAvatar" data-bind="style: {backgroundImage: 'url(\'' + user.avatar() + '\')' }"></div> -->
+					<span class="name">{{stat.user.username}}</span>
+					<span class="points">{{stat.points}}</span>
+				</div>
+			</div>
+
+			<div class="board tournaments">
+				<span class="title">Tournaments</span>
+				<div class="" v-for="tournament in tournaments">
+					<!-- <span class="tournament" data-bind="text: name, click: showTournament" /> -->
+					<span class="tournament">{{tournament.name}}</span>
+				</div>
+			</div>
+
+			<div class="board lastGames">
+				<span class="title">Last games</span>
+					<div class="" v-for="game in lastGames">
+					<span class="game">{{game.text}}</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="buttonsWrapper centered">
+			<button class="primary" v-on:click="addResult">Add result (regular season)</button>
+			<button class="primary" v-on:click="createTournament">Create tournament</button>
+			<button class="primary" v-on:click="addPlayer">Add player</button>
+		</div>
+
+		<!-- <div data-bind="template: { name: 'fun/tournament', data: tournament}"></div> -->
+</div>
+
+
+
+
+    <!-- CUSTOM -->
+    <script type="text/javascript" src="/js/notepong.js"></script>
+    <!-- END -->
+  </body>
+</html>
