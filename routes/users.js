@@ -1,9 +1,14 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
+var models = require('../server/models/allModels.js');
+var usersControllers = require('../server/controllers/usersControllers');
+
+/* GET home page. */
+// router.get('/', function(req, res, next) {
+// 	res.sendFile(path.join(__dirname, '/../views/index.html'));
+// });
+
+router.route('/create').post(usersControllers.create)
 
 module.exports = router;

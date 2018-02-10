@@ -16,12 +16,13 @@
     <!-- CSS -->
       <!-- LIBS -->
       <link rel="shortcut icon" type="image/png" href="/images/favicon.png?v=5"/>
-      <link rel="stylesheet" type="text/css" href="/css/reset.css">
+      <link rel="stylesheet" type="text/css" href="/static/css/lib/reset.css">
+      <link rel="stylesheet" type="text/css" href="/static/css/lib/bootstrap.min.css">
       <!-- END -->
       
       <!-- CUSTOM -->
-      <link rel="stylesheet" type="text/css" href="/css/modernForm.css">
-      <link rel="stylesheet" type="text/css" href="/css/base.css">
+      <link rel="stylesheet" type="text/css" href="/static/css/modernForm.css">
+      <link rel="stylesheet" type="text/css" href="/static/css/base.css">
       <!-- END -->
     <!-- END -->
   
@@ -29,8 +30,13 @@
       <!-- LIBS  -->
       <script src="https://use.fontawesome.com/e1961fd544.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+		
+			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="/static/js/lib/bootstrap.min.js"></script>
+      <!-- END -->
 
-      <!-- <script type='text/javascript' src='/static/js/lib/jquery-3.1.1.min.js'></script> -->
+      <!-- CUSTOM -->
       <!-- END -->
 
     <!-- END -->
@@ -42,49 +48,68 @@
 <div id="notepong" class="notepong scrollingPage modernForm">
 	<h1 class="center">Notepong</h1>
 
-		<div class="largePadding centered">
-			<div class="board">
-				<span class="title">Ranking</span>
+	<div class="largePadding centered">
+		<div class="board">
+			<span class="title">Ranking</span>
 
 
-				<!-- <div class="player" v-for="todo in todos" data-bind="css: {leader: $index() == 0}"> -->
-				<div class="player" v-for="stat in stats">
+			<!-- <div class="player" v-for="todo in todos" data-bind="css: {leader: $index() == 0}"> -->
+			<div class="player" v-for="stat in stats">
 <!-- 					<div class="playerAvatar playerBackgroundAvatar" data-bind="style: {backgroundImage: 'url(\'' + user.avatar() + '\')' }"></div> -->
-					<span class="name">{{stat.user.username}}</span>
-					<span class="points">{{stat.points}}</span>
-				</div>
-			</div>
-
-			<div class="board tournaments">
-				<span class="title">Tournaments</span>
-				<div class="" v-for="tournament in tournaments">
-					<!-- <span class="tournament" data-bind="text: name, click: showTournament" /> -->
-					<span class="tournament">{{tournament.name}}</span>
-				</div>
-			</div>
-
-			<div class="board lastGames">
-				<span class="title">Last games</span>
-					<div class="" v-for="game in lastGames">
-					<span class="game">{{game.text}}</span>
-				</div>
+				<span class="name">{{stat.user.username}}</span>
+				<span class="points">{{stat.points}}</span>
 			</div>
 		</div>
 
-		<div class="buttonsWrapper centered">
-			<button class="primary" v-on:click="addResult">Add result (regular season)</button>
-			<button class="primary" v-on:click="createTournament">Create tournament</button>
-			<button class="primary" v-on:click="addPlayer">Add player</button>
+		<div class="board tournaments">
+			<span class="title">Tournaments</span>
+			<div class="" v-for="tournament in tournaments">
+				<!-- <span class="tournament" data-bind="text: name, click: showTournament" /> -->
+				<span class="tournament">{{tournament.name}}</span>
+			</div>
 		</div>
 
-		<!-- <div data-bind="template: { name: 'fun/tournament', data: tournament}"></div> -->
+		<div class="board lastGames">
+			<span class="title">Last games</span>
+				<div class="" v-for="game in lastGames">
+				<span class="game">{{game.text}}</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="buttonsWrapper centered">
+		<button class="primary" v-on:click="addResult">Add result (regular season)</button>
+		<button class="primary" v-on:click="createTournament">Create tournament</button>
+		<button class="primary" data-toggle="modal" data-target="#addUser">Add player</button>
+	</div>
+
+	<!-- <div data-bind="template: { name: 'fun/tournament', data: tournament}"></div> -->
+</div>
+
+<!-- ADD USER - Modal -->
+<div class="modal fade modernForm medium" id="addUser" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add Ping Pong Player</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+				<label class="formLabel">Username: </label><input type="text" v-model="username" />
+				<label class="formLabel">NF ID: </label><input type="text" v-model="userId" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button class="primary" v-on:click="add">Add</button>
+      </div>
+    </div>
+  </div>
 </div>
 
 
-
-
     <!-- CUSTOM -->
-    <script type="text/javascript" src="/js/notepong.js"></script>
+    <script type="text/javascript" src="/static/js/notepong.js"></script>
+    <script type="text/javascript" src="/static/js/addUser.js"></script>
     <!-- END -->
   </body>
 </html>

@@ -128,3 +128,7 @@ Tournaments.sync({force: DROP_TABLES}).then(() => {
 TournamentGames.sync({force: DROP_TABLES}).then(() => {
 });
 
+module.exports = {
+  User: User
+}
+
